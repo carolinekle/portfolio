@@ -1,0 +1,170 @@
+body{
+  display: flex;
+  flex-direction: column;
+  font-family: Helvetica, sans-serif;
+  height: -webkit-fill-available;
+  width: -webkit-fill-available;
+  overflow: scroll;
+  margin:0px;
+  background-color: whitesmoke;
+}
+
+#welcome-section{
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  background-image:  linear-gradient(to bottom, rgba(255,255,255,0), rgba(0,0,0, 0) 65%),url(/public/assets/master-crop.gif);
+  background-size: cover; /* or "contain" depending on what you want */
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+h1{
+  color:#2c4400;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  flex-basis: 20%;
+  justify-content: space-around;
+  align-content: start;
+  margin-top: 20%;
+  font-size:70px;
+  margin: 2rem;
+  font-style:italic;
+
+}
+
+.nav{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-basis: 60%;
+  font-size: 1.5rem;
+  
+}
+
+h1:nth-child(2) {
+  font-size:40px;
+}
+
+/* #navbar > a {
+
+-webkit-text-stroke-width: 4px;
+-webkit-text-stroke-color: black;
+color:#F2f9d0;
+
+}
+*/
+#navbar > i {
+
+  margin-top: .5%;
+  margin-bottom: .5%;
+  
+}
+
+a:link, a:visited{
+  text-decoration: none;
+  
+  color:#2c4400;
+  -webkit-text-stroke-width: .1px;
+  -webkit-text-stroke-color: white;
+  font-size:larger;
+} 
+a:focus{
+  color:#669802 ;
+
+}
+
+
+#projects{
+  display: flex;
+  justify-content:space-around;
+  flex-direction: column;
+  flex-wrap:wrap;
+  align-items:center;
+  margin: auto;
+  flex-basis: 50%;
+  width:100%;
+  height: 700px;
+  margin-block-start: 5%;
+  margin-bottom: 5%;
+  background-color: whitesmoke;
+}
+/*F5F3E2*/
+
+img, .overlay{
+  justify-content: center;
+  width: 200px;
+  height: 200px;
+  margin: auto;
+
+}
+
+.portfolio-tile{
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  text-align:center;
+  margin-top: 1.5rem;
+}
+
+p{
+  text-align: center;
+  color: black;
+}
+
+
+.tile{
+  display: flex;
+  object-fit: cover;
+  object-position:top;
+}
+
+
+.nav-active {
+  background-color:#6c8440;
+  margin:auto;
+  transition: background-color 200ms linear;
+
+}
+
+a:hover{
+  cursor: pointer;
+
+}
+
+.tile{
+  justify-self: center;
+}
+.contact{
+  display: flex;
+}
+
+.press{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width:50px;
+  height:1rem;
+  background-color:#b2c655;
+  margin:auto;
+
+}
+hr {
+  border: 0;
+  clear:both;
+  display:block;
+  width: 96%;               
+  background-color:black;
+  height: 1px;
+}
+
+
+@media only screen and (max-width: 600px) {
+  #projects {
+    flex-wrap: nowrap;
+  }
+}
+
+
