@@ -1,26 +1,32 @@
 body{
   display: flex;
+  display: flex;
   flex-direction: column;
-  font-family: Helvetica, sans-serif;
+  justify-content: space-around;
   height: -webkit-fill-available;
   width: -webkit-fill-available;
   overflow: scroll;
   margin:0px;
+  font-family: Helvetica, sans-serif;
   background-color: whitesmoke;
+
 }
 
-#welcome-section{
+
+/* #content{
   display: flex;
-  height: 100vh;
-  width: 100vw;
-  background-image:  linear-gradient(to bottom, rgba(255,255,255,0), rgba(0,0,0, 0) 65%),url(/public/assets/master-crop.gif);
-  background-size: cover; /* or "contain" depending on what you want */
-  background-position: center center;
-  background-repeat: no-repeat;
+  height: 85vh;
+
+}
+ */
+#back{
+  display: flex;
+  align-self: center;
+  margin: auto;
 }
 
 h1{
-  color:#2c4400;
+  color:#6c8440;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -28,23 +34,44 @@ h1{
   justify-content: space-around;
   align-content: start;
   margin-top: 20%;
-  font-size:70px;
-  margin: 2rem;
+  font-size:30px;
+  margin: 1rem;
   font-style:italic;
 
 }
 
-.nav{
+/* small{
+  color:#6c8440 !important;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
+  flex-basis: 20%;
+  justify-content: space-around;
+  align-content: start;
+  margin: auto;
+  margin-left:10%
+} */
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  width: 30vh;
   justify-content: center;
-  flex-basis: 60%;
-  font-size: 1.5rem;
-  
+  height: 85vh;
+  margin-top: 2rem;
+}
+
+.fun{
+  height:2rem;
+  width:2rem;
+  margin:auto;
+  display: flex;
+  justify-content: flex-end;
+  background-color: #000000;
 }
 
 h1:nth-child(2) {
-  font-size:40px;
+  font-size:20px;
 }
 
 /* #navbar > a {
@@ -55,49 +82,78 @@ color:#F2f9d0;
 
 }
 */
-#navbar > i {
 
-  margin-top: .5%;
-  margin-bottom: .5%;
-  
+.hover-image{
+  background-image: url(./images/Essex_Hemphill.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-a:link, a:visited{
+
+a:link, a:visited, a:hover{
   text-decoration: none;
-  
-  color:#2c4400;
+
+  color:#6c8440;
   -webkit-text-stroke-width: .1px;
   -webkit-text-stroke-color: white;
-  font-size:larger;
+  cursor: pointer;
 } 
+
+li:active{
+  background-color:#6c8440;
+  color:whitesmoke
+}
+
 a:focus{
-  color:#669802 ;
-
+  color:#6c8440;
 }
 
 
-#projects{
-  display: flex;
-  justify-content:space-around;
-  flex-direction: column;
-  flex-wrap:wrap;
-  align-items:center;
-  margin: auto;
-  flex-basis: 50%;
-  width:100%;
-  height: 700px;
-  margin-block-start: 5%;
-  margin-bottom: 5%;
-  background-color: whitesmoke;
-}
 /*F5F3E2*/
 
 img, .overlay{
+  display: flex;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  pointer-events: none;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
-  width: 200px;
-  height: 200px;
-  margin: auto;
+  width: 90vw;
+  height: 90vh;
 
+}
+
+.bottom{
+  margin: 3rem 4.5rem 3rem 4.5rem;
+  display: flex;
+  height: 90vh;
+  width: 90vw;
+  text-align: left;
+  justify-items: center;
+}
+
+.sample > a:hover, a:active{
+  background-color:#6c8440;
+  color:whitesmoke !important
+}
+
+.sample > a:link, a:visited{
+  color:#6c8440;
+}
+
+.tile{
+  background-position: center;
+  display: block;
+  width: 200px; 
+  height: 200px;
+
+  display: flex;
+  object-fit: cover;
+  object-position:top;
 }
 
 .portfolio-tile{
@@ -128,17 +184,12 @@ p{
 
 }
 
-a:hover{
-  cursor: pointer;
 
-}
 
 .tile{
   justify-self: center;
 }
-.contact{
-  display: flex;
-}
+
 
 .press{
   display: flex;
@@ -151,14 +202,6 @@ a:hover{
   margin:auto;
 
 }
-hr {
-  border: 0;
-  clear:both;
-  display:block;
-  width: 96%;               
-  background-color:black;
-  height: 1px;
-}
 
 
 @media only screen and (max-width: 600px) {
@@ -167,4 +210,71 @@ hr {
   }
 }
 
+#exerpt{
+  height: 85vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+}
 
+li{
+  margin: 1rem 0px 1rem 0px;
+  list-style-type: none;
+}
+
+.editorial, .web{
+  margin-top: 7%;;
+}
+
+.web{
+  margin-right: 7%;
+}
+
+#intro{
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  margin: auto;
+  height: 100vh;
+  background-color: whitesmoke;
+  width: 70vw;
+}
+
+.contact{
+  margin-top: 10%;
+}
+
+.about > p{
+  text-align: start;
+}
+
+.about{
+  margin-top: 7%;
+}
+
+
+.sample{
+  width: 50%;
+}
+
+.arrow{
+  margin-bottom: 3rem;
+  align-self: end;
+  font-size: x-large;
+  color: #6c8440;
+}
+
+.sample > p{
+  text-align: left;
+}
+
+.bouncing {
+  font-weight: bold;
+  animation: bounce 1.5s; 
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+  40% { transform: translateY(-30px); } 
+  60% { transform: translateY(-15px); }
+}
