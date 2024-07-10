@@ -1,17 +1,23 @@
+
+
 #root{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   font-family: Helvetica, sans-serif;
   background-color: whitesmoke;
-
+  width: 70vw;
+  height: auto;
+  min-height: 100vh;
+  overflow:visible;
+  overflow-x:hidden;
 }
-#content{
+
+#container{
   display: flex;
-  height: 85vh;
-  max-width: 70vw;
-  max-width: 100%;
-  overflow-x: hidden;
+  height: auto;
+  width: 70vw;
+  flex-direction: column;
 }
 
 #back{
@@ -35,17 +41,7 @@ h1{
 
 }
 
-/* small{
-  color:#6c8440 !important;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  flex-basis: 20%;
-  justify-content: space-around;
-  align-content: start;
-  margin: auto;
-  margin-left:10%
-} */
+
 
 .nav {
   display: flex;
@@ -109,11 +105,11 @@ a:focus{
   justify-content: space-between;
   flex-direction: row;
   align-items: start;
-  margin: 0 auto; /* Ensures no extra margins are added */
-  height: 85vh;
   background-color: whitesmoke;
   width: 70vw;
-
+  max-width: 100%;
+  height: 80vh; /* Remove !important if it's causing issues */
+  flex-shrink: 0;
 }
 /*F5F3E2*/
 
@@ -136,8 +132,8 @@ img, .overlay{
 .bottom{
   margin: 3rem 4.5rem 3rem 4.5rem;
   display: flex;
-  height: 90vh;
-  width: 90vw;
+  height: auto;
+  width: 80vw;
   text-align: left;
   justify-items: center;
 }

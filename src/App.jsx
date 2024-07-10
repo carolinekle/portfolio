@@ -4,8 +4,8 @@ import './App.css'
 
 const sample = {
   reason: {
-    path: "../public/assets/reason.jpg",
-    text: `<strong><a href="https://www.youtube.com/watch?v=w6vnyJuHbi8">Does psychedelic therapy live up to the hype?  |  Dec8 Productions</a></strong>
+    path: "../assets/reason.jpg",
+    text: `<strong><a href="https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbmJSN3NtR3V5dV9RWUNIX00tWmlTVE9DQ0J6d3xBQ3Jtc0tsbkZyeGE4RG83bmRxQXJzUDFxeGh5SlpxOFhnUWNRUEJfLUlRNGlVRWVaQ3J2Wm02SVVFcWpqV08zRkMtclpBc084S29iNUFQMWx1NU1IbFVGd0tscGM3Skh5SUYwTlJ6M3hGQ1hrM2FleVcweFBCbw&q=https%3A%2F%2Freason.com%2Fvideo%2F2023%2F01%2F24%2Fheroin-addiction-psychedelics-ayahuasca-therapy%2F&v=w6vnyJuHbi8">Does psychedelic therapy live up to the hype?  |  Dec8 Productions</a></strong>
       <p>Although the Van Tuinens have no official training or licensing, 
       they are part of a broader movement. 
       Therapists and researchers increasingly see psychedelics as an effective 
@@ -13,10 +13,12 @@ const sample = {
       Administration is nearing approval of MDMA, psilocybin, and other 
       substances in therapeutic settings.
       </p><small>Associate Producer</small>`,
-    category: 'editorial'
+    category: 'editorial',
+    name:`Pschedelic therapy`,
+    asset:`<iframe width="560" height="315" src="https://www.youtube.com/embed/w6vnyJuHbi8?si=UafpkuYS9JyAauJ8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
   },
   essex: {
-    path: "../public/assets/Essex_Hemphill.jpg",
+    path: "../assets/Essex_Hemphill.jpg",
     text: `<strong><i><a href="https://www.thecoffeehousedc.com/">Fierceness Served!</i>  |  Dec8 Productions</a></strong>
       <p>The Fierceness Served! The ENIKAlley Coffeehouse documentary focuses on 
       the local history of a Black LGBT performance venue, rehearsal space, 
@@ -24,10 +26,12 @@ const sample = {
       from the 1980s to the mid-90s. It was the epicenter of a cultural renaissance 
       that paralleled The Harlem Renaissance.
       </p><small>Production Assistant Intern</small>`,
-    category: 'editorial'
+    category: 'editorial',
+    name:`Fierceness Served!`,
+    asset:"../assets/serve1.png"
   },
-  amnh: {
-    path: "../public/assets/amnh.gif",
+  galaxy: {
+    path: "../assets/amnh.gif",
     text: `<strong><a href="http://user.astro.columbia.edu/~esandford/keplerAtlas/home.html">Kepler Atlas | American Museum of Natural History</a></strong>
       <p>Interning at the American Museum of Natural History, 
       I contributed to the development of an interactive Kepler Exoplanet Atlas. 
@@ -40,10 +44,12 @@ const sample = {
       to its host star, providing a glimpse into the diversity and potential 
       habitability of planetary systems beyond our solar system.
       </p><small>Astrophysics Intern</small>`,
-    category: 'web'
+    category: 'web',
+    name:`Milkyway Map`,
+    asset:""
   },
   strong: {
-    path: "../public/assets/SafeStrong.jpg",
+    path: "../assets/SafeStrong.jpg",
     text: `<strong> <i><a href="https://sbpress.com/2021/03/coming-back-safe-and-strong/">"Coming Back Safe and Strong"</i> | Stony Brook Press</a></strong>
       <p>I reported and wrote an article on Stony Brook University's Member Action Coalition SBU (MAC), 
       a caucus within the United University Professions (UUP) union, challenging the administration's 
@@ -53,10 +59,12 @@ const sample = {
       community. My reporting for the Stony Brook Press, where I advanced from writer to editor, earned me the Best Student 
       COVID Reporting award from the Long Island Press Club.  
       </p><small>Writer and Editor</small>`,
-    category: 'editorial'
+    category: 'editorial',
+    name:`"Coming Back Safe and Strong"`,
+    asset:""
   },
   mega: {
-    path: "../public/assets/spaceman2.gif",
+    path: "../assets/spaceman2.gif",
     text: `<strong><a href="https://www.usnews.com/topics/series/megatrends">ASCII gifs  |  U.S. News</a></strong>
       <p>As part of U.S. News & World Report's investing series on megatrends, 
       I contributed by creating ASCII GIFs to bring these concepts to life. 
@@ -65,10 +73,12 @@ const sample = {
       Each GIF provided a unique visual perspective, enhancing reader engagement with 
       the future of investing in these transformative areas.
       </p><small>Digital Producer</small>`,
-    category: 'web'
+    category: 'web',
+    name:`Megatrends`,
+    asset:""
   },
   network: {
-    path: "../public/assets/heart.gif",
+    path: "../assets/heart.gif",
     text: `<strong><a href="">Network</a></strong>
       <p>I developed a clone of Twitter using Django, a powerful web framework in Python. 
       This project involved creating a platform that mimics key functionalities of Twitter, 
@@ -79,10 +89,12 @@ const sample = {
       exploring the architecture and design principles behind a popular social media platform 
       like Twitter.
       </p><small>Software Developer</small>`,
-    category: 'web'
+    category: 'web',
+    name:`Network`,
+    asset:""
   },
   circa: {
-    path: "../public/assets/circa.gif",
+    path: "../assets/circa.gif",
     text: `<strong><a href="">Circa</a></strong>
       <p>A custom news site was developed using an API integration and a tailored CMS. 
       This project aimed to streamline content aggregation and publication processes by leveraging 
@@ -91,13 +103,16 @@ const sample = {
       with a user-friendly CMS interface, the news site provided curated and timely information to 
       its audience while optimizing editorial workflows behind the scenes.
       </p><small>Software Developer</small>`,
-    category: 'web'
+    category: 'web', 
+    name:`Circa`,
+    asset:""
   },
 };
 
 const App = () => {
   const [selectedSample, setSelectedSample] = useState(null);
   const [hoveredImage, setHoveredImage] = useState(null);
+  const [sampleAsset, setSampleAsset] = useState(null)
 
   const handleMouseOver = (key) => {
     setHoveredImage(sample[key].path);
@@ -109,6 +124,7 @@ const App = () => {
 
   const handleClick = (key) => {
     setSelectedSample(sample[key].text);
+    setSampleAsset(sample[key].asset)
   };
 
   const renderItems = (category) => {
@@ -122,10 +138,17 @@ const App = () => {
           onMouseOut={handleMouseOut}
           onClick={() => handleClick(key)}
         >
-          ↵ {key.charAt(0).toUpperCase() + key.slice(1)}
+          ↵ {sample[key].name}
         </li>
       ));
   };
+
+/*   const renderAssets = (asset) => {
+    return Object.keys(sample)
+    .filter(key => sample[key].asset {
+
+    })
+  } */
 
   return (
     <div id="container">
@@ -157,6 +180,11 @@ const App = () => {
         <div className="bottom">
           <div id="exerpt">
             <div className="sample" dangerouslySetInnerHTML={{ __html: selectedSample }} />
+            {sampleAsset && (
+              <div className="assets">
+                {sampleAsset}
+              </div>
+            )}
           </div>
         </div>
       )}

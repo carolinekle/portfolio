@@ -1,7 +1,6 @@
 body{
   display: flex;
-  display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-around;
   height: -webkit-fill-available;
   width: -webkit-fill-available;
@@ -9,7 +8,7 @@ body{
   margin:0px;
   font-family: Helvetica, sans-serif;
   background-color: whitesmoke;
-
+  height: auto;
 }
 
 
