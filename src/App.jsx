@@ -5,7 +5,7 @@ import './App.css'
 const sample = {
   reason: {
     path: "../assets/reason.jpg",
-    text: `<strong><a href="https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbmJSN3NtR3V5dV9RWUNIX00tWmlTVE9DQ0J6d3xBQ3Jtc0tsbkZyeGE4RG83bmRxQXJzUDFxeGh5SlpxOFhnUWNRUEJfLUlRNGlVRWVaQ3J2Wm02SVVFcWpqV08zRkMtclpBc084S29iNUFQMWx1NU1IbFVGd0tscGM3Skh5SUYwTlJ6M3hGQ1hrM2FleVcweFBCbw&q=https%3A%2F%2Freason.com%2Fvideo%2F2023%2F01%2F24%2Fheroin-addiction-psychedelics-ayahuasca-therapy%2F&v=w6vnyJuHbi8">Does psychedelic therapy live up to the hype?  |  Dec8 Productions</a></strong>
+    text: `<strong><a href="https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbmJSN3NtR3V5dV9RWUNIX00tWmlTVE9DQ0J6d3xBQ3Jtc0tsbkZyeGE4RG83bmRxQXJzUDFxeGh5SlpxOFhnUWNRUEJfLUlRNGlVRWVaQ3J2Wm02SVVFcWpqV08zRkMtclpBc084S29iNUFQMWx1NU1IbFVGd0tscGM3Skh5SUYwTlJ6M3hGQ1hrM2FleVcweFBCbw&q=https%3A%2F%2Freason.com%2Fvideo%2F2023%2F01%2F24%2Fheroin-addiction-psychedelics-ayahuasca-therapy%2F&v=w6vnyJuHbi8" target="_blank">Does psychedelic therapy live up to the hype?  |  Dec8 Productions</a></strong>
       <p>Although the Van Tuinens have no official training or licensing, 
       they are part of a broader movement. 
       Therapists and researchers increasingly see psychedelics as an effective 
@@ -15,11 +15,12 @@ const sample = {
       </p><small>Associate Producer</small>`,
     category: 'editorial',
     name:`Pschedelic therapy`,
-    asset:`<iframe width="560" height="315" src="https://www.youtube.com/embed/w6vnyJuHbi8?si=UafpkuYS9JyAauJ8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
+    asset:`<iframe width="560" height="315" src="https://www.youtube.com/embed/w6vnyJuHbi8?si=UafpkuYS9JyAauJ8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
+    assetType:"iframe"
   },
   essex: {
     path: "../assets/Essex_Hemphill.jpg",
-    text: `<strong><i><a href="https://www.thecoffeehousedc.com/">Fierceness Served!</i>  |  Dec8 Productions</a></strong>
+    text: `<strong><i><a href="https://www.thecoffeehousedc.com/" target="_blank">Fierceness Served!</i>  |  Dec8 Productions</a></strong>
       <p>The Fierceness Served! The ENIKAlley Coffeehouse documentary focuses on 
       the local history of a Black LGBT performance venue, rehearsal space, 
       and meeting place for artists and political organizations in Washington, DC 
@@ -28,11 +29,12 @@ const sample = {
       </p><small>Production Assistant Intern</small>`,
     category: 'editorial',
     name:`Fierceness Served!`,
-    asset:"../assets/serve1.png"
+    asset:["../assets/sample-assets/serve1.png", "../assets/sample-assets/serve2.png"],
+    assetType:"gallery"
   },
   galaxy: {
     path: "../assets/amnh.gif",
-    text: `<strong><a href="http://user.astro.columbia.edu/~esandford/keplerAtlas/home.html">Kepler Atlas | American Museum of Natural History</a></strong>
+    text: `<strong><a href="http://user.astro.columbia.edu/~esandford/keplerAtlas/home.html" target="_blank">Kepler Atlas | American Museum of Natural History</a></strong>
       <p>Interning at the American Museum of Natural History, 
       I contributed to the development of an interactive Kepler Exoplanet Atlas. 
       This digital platform showcases over 2,300 confirmed exoplanets discovered 
@@ -50,7 +52,7 @@ const sample = {
   },
   strong: {
     path: "../assets/SafeStrong.jpg",
-    text: `<strong> <i><a href="https://sbpress.com/2021/03/coming-back-safe-and-strong/">"Coming Back Safe and Strong"</i> | Stony Brook Press</a></strong>
+    text: `<strong> <i><a href="https://sbpress.com/2021/03/coming-back-safe-and-strong/" target="_blank">"Coming Back Safe and Strong"</i> | Stony Brook Press</a></strong>
       <p>I reported and wrote an article on Stony Brook University's Member Action Coalition SBU (MAC), 
       a caucus within the United University Professions (UUP) union, challenging the administration's 
       directive for professional staff to return to campus. Despite a statewide telecommuting agreement set to expire, 
@@ -65,7 +67,7 @@ const sample = {
   },
   mega: {
     path: "../assets/spaceman2.gif",
-    text: `<strong><a href="https://www.usnews.com/topics/series/megatrends">ASCII gifs  |  U.S. News</a></strong>
+    text: `<strong><a href="https://www.usnews.com/topics/series/megatrends" target="_blank">ASCII gifs  |  U.S. News</a></strong>
       <p>As part of U.S. News & World Report's investing series on megatrends, 
       I contributed by creating ASCII GIFs to bring these concepts to life. 
       These GIFs were designed to add a dynamic and visually compelling element, 
@@ -112,7 +114,8 @@ const sample = {
 const App = () => {
   const [selectedSample, setSelectedSample] = useState(null);
   const [hoveredImage, setHoveredImage] = useState(null);
-  const [sampleAsset, setSampleAsset] = useState(null)
+  const [sampleAsset, setSampleAsset] = useState(null);
+  const [assetType, setAssetType] = useState(null);
 
   const handleMouseOver = (key) => {
     setHoveredImage(sample[key].path);
@@ -125,6 +128,7 @@ const App = () => {
   const handleClick = (key) => {
     setSelectedSample(sample[key].text);
     setSampleAsset(sample[key].asset)
+    setAssetType(sample[key].assetType);
   };
 
   const renderItems = (category) => {
@@ -143,12 +147,23 @@ const App = () => {
       ));
   };
 
-/*   const renderAssets = (asset) => {
-    return Object.keys(sample)
-    .filter(key => sample[key].asset {
-
-    })
-  } */
+  const renderAssets = () => {
+    if (assetType === 'image') {
+      return <img src={sampleAsset} alt="Sample Asset" style={{ height: '200px', width: '200px', objectFit: 'cover' }} />;
+    } else if (assetType === 'gallery') {
+      return (
+        <div className="gallery">
+          {sampleAsset.map((src, index) => (
+            <img key={index} src={src} alt={`Sample Asset ${index + 1}`} style={{ height: '200px', width: '200px', objectFit: 'cover' }} />
+          ))}
+        </div>
+      );
+    } else if (assetType === 'iframe') {
+      return <div dangerouslySetInnerHTML={{ __html: sampleAsset }} />;
+    } else {
+      return null;
+    }
+  };
 
   return (
     <div id="container">
@@ -174,17 +189,15 @@ const App = () => {
 
       </div>
       {hoveredImage && (
-        <img src={hoveredImage} alt="Hovered project" style={{ height: '200px', width: '200px', objectFit: 'cover' }} />
+        <img className="hovered" src={hoveredImage} alt="Hovered project" style={{ height: '200px', width: '200px', objectFit: 'cover' }} />
       )}
       {selectedSample && (
         <div className="bottom">
           <div id="exerpt">
             <div className="sample" dangerouslySetInnerHTML={{ __html: selectedSample }} />
-            {sampleAsset && (
-              <div className="assets">
-                {sampleAsset}
-              </div>
-            )}
+            <div id="sample-assets">
+            {renderAssets()}
+            </div>
           </div>
         </div>
       )}

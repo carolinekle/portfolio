@@ -113,7 +113,7 @@ a:focus{
 }
 /*F5F3E2*/
 
-img, .overlay{
+.hovered, .overlay{
   display: flex;
   position: fixed;
   top: 50%;
