@@ -48,7 +48,8 @@ const sample = {
       </p><small>Astrophysics Intern</small>`,
     category: 'web',
     name:`Milkyway Map`,
-    asset:""
+    asset:["../assets/sample-assets/serve1.png", "../assets/sample-assets/serve2.png"],
+    assetType:"gallery"
   },
   strong: {
     path: "../assets/SafeStrong.jpg",
@@ -63,7 +64,8 @@ const sample = {
       </p><small>Writer and Editor</small>`,
     category: 'editorial',
     name:`"Coming Back Safe and Strong"`,
-    asset:""
+    asset:"",
+    assetType:"text"
   },
   mega: {
     path: "../assets/spaceman2.gif",
@@ -77,7 +79,8 @@ const sample = {
       </p><small>Digital Producer</small>`,
     category: 'web',
     name:`Megatrends`,
-    asset:""
+    asset:["../assets/sample-assets/earth.gif","public/assets/sample-assets/ghost.gif","../assets/sample-assets/turbines.gif"], 
+    assetType:"gallery"
   },
   network: {
     path: "../assets/heart.gif",
@@ -149,17 +152,17 @@ const App = () => {
 
   const renderAssets = () => {
     if (assetType === 'image') {
-      return <img src={sampleAsset} alt="Sample Asset" style={{ height: '200px', width: '200px', objectFit: 'cover' }} />;
+      return <img src={sampleAsset} alt="sample-img" style={{ height: '200px', width: '200px', objectFit: 'cover' }} />;
     } else if (assetType === 'gallery') {
       return (
         <div className="gallery">
           {sampleAsset.map((src, index) => (
-            <img key={index} src={src} alt={`Sample Asset ${index + 1}`} style={{ height: '200px', width: '200px', objectFit: 'cover' }} />
+            <img key={index} src={src} className={`gallery-img ${index+1}`} alt={`gallery img${index + 1}`} style={{ borderRadius:'5%', height: '200px', width: '200px', objectFit: 'cover' }} />
           ))}
         </div>
       );
     } else if (assetType === 'iframe') {
-      return <div dangerouslySetInnerHTML={{ __html: sampleAsset }} />;
+      return <div className="sample-vid" dangerouslySetInnerHTML={{ __html: sampleAsset }} />;
     } else {
       return null;
     }
@@ -195,7 +198,7 @@ const App = () => {
         <div className="bottom">
           <div id="exerpt">
             <div className="sample" dangerouslySetInnerHTML={{ __html: selectedSample }} />
-            <div id="sample-assets">
+            <div id="sample-assets" style={{ width: '50%'}}>
             {renderAssets()}
             </div>
           </div>
