@@ -11,7 +11,71 @@ body{
   height: auto;
 }
 
+#welcome-section{
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  background-image:  linear-gradient(to bottom, rgba(255,255,255,0), rgba(0,0,0, 0) 65%),url(../public/assets/master-crop.gif);
+  background-size: cover; /* or "contain" depending on what you want */
+  background-position: center center;
+  background-repeat: no-repeat;
+}
 
+.welcome{
+  color:#203101 !important;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  flex-basis: 20%;
+  justify-content: space-around;
+  align-content: start;
+  margin-top: 20%;
+  font-size:70px;
+  margin: 2rem;
+  font-style:italic;
+
+}
+
+#welcome-link > a:link, .main-nav>a:visited{
+  text-decoration: none;
+  
+  color:#2c4400;
+  -webkit-text-stroke-width: .1px;
+  -webkit-text-stroke-color: white;
+  font-size:larger;
+} 
+a:focus{
+  color:#669802 ;
+
+}
+
+.main-nav{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-basis: 60%;
+  font-size: 1.5rem;
+  
+}
+
+.welcome:nth-child(2) {
+  font-size:40px;
+}
+
+/* #navbar > a {
+
+-webkit-text-stroke-width: 4px;
+-webkit-text-stroke-color: black;
+color:#F2f9d0;
+
+}
+*/
+#navbar > i {
+
+  margin-top: .5%;
+  margin-bottom: .5%;
+  
+}
 /* #content{
   display: flex;
   height: 85vh;
@@ -58,6 +122,8 @@ h1{
   justify-content: center;
   height: 85vh;
   margin-top: 2rem;
+  position:sticky;
+  top:0;
 }
 
 .fun{
@@ -126,22 +192,7 @@ img, .overlay{
 
 }
 */
-.bottom{
-  margin: 3rem 4.5rem 3rem 4.5rem;
-  display: flex;
-  height: 90vh;
-  text-align: left;
-  justify-items: center;
-}
 
-.sample > a:hover, a:active{
-  background-color:#6c8440;
-  color:whitesmoke !important
-}
-
-.sample > a:link, a:visited{
-  color:#6c8440;
-}
 
 .tile{
   background-position: center;
@@ -250,10 +301,6 @@ li{
   margin-top: 7%;
 }
 
-
-.sample{
-  width: 50%;
-}
 
 .arrow{
   margin-bottom: 3rem;

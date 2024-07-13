@@ -198,7 +198,7 @@ const App = () => {
         <div className="bottom">
           <div id="exerpt">
             <div className="sample" dangerouslySetInnerHTML={{ __html: selectedSample }} />
-            <div id="sample-assets" style={{ width: '50%'}}>
+            <div id="sample-assets" style={{ width: '70%'}}>
             {renderAssets()}
             </div>
           </div>

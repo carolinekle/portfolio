@@ -1,5 +1,3 @@
-
-
 #root{
   display: flex;
   flex-direction: column;
@@ -9,7 +7,7 @@
   width: 70vw;
   height: auto;
   min-height: 100vh;
-  overflow:visible;
+  overflow:hidden;
   overflow-x:hidden;
 }
 
@@ -27,7 +25,7 @@
 }
 
 h1{
-  color:#6c8440;
+  color: #6c8440;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -35,13 +33,10 @@ h1{
   justify-content: space-around;
   align-content: start;
   margin-top: 20%;
-  font-size:30px;
+  font-size: 30px;
   margin: 1rem;
-  font-style:italic;
-
+  font-style: italic;
 }
-
-
 
 .nav {
   display: flex;
@@ -50,29 +45,22 @@ h1{
   justify-content: center;
   height: 85vh;
   margin-top: 2rem;
+  position:sticky;
+  top:0;
 }
 
 .fun{
-  height:2rem;
-  width:2rem;
-  margin:auto;
+  height: 2rem;
+  width: 2rem;
+  margin: auto;
   display: flex;
   justify-content: flex-end;
   background-color: #000000;
 }
 
 h1:nth-child(2) {
-  font-size:20px;
+  font-size: 20px;
 }
-
-/* #navbar > a {
-
--webkit-text-stroke-width: 4px;
--webkit-text-stroke-color: black;
-color:#F2f9d0;
-
-}
-*/
 
 .hover-image{
   background-image: url(./images/Essex_Hemphill.jpg);
@@ -80,25 +68,22 @@ color:#F2f9d0;
   background-position: center;
 }
 
-
 a:link, a:visited, a:hover{
   text-decoration: none;
-
-  color:#6c8440;
+  color: #6c8440;
   -webkit-text-stroke-width: .1px;
   -webkit-text-stroke-color: white;
   cursor: pointer;
 } 
 
 li:active{
-  background-color:#6c8440;
-  color:whitesmoke
+  background-color: #6c8440;
+  color: whitesmoke;
 }
 
 a:focus{
-  color:#6c8440;
+  color: #6c8440;
 }
-
 
 #projects {
   display: flex;
@@ -108,43 +93,45 @@ a:focus{
   background-color: whitesmoke;
   width: 70vw;
   max-width: 100%;
-  height: 80vh; /* Remove !important if it's causing issues */
+  height: 80vh;
   flex-shrink: 0;
+  position: relative;
 }
-/*F5F3E2*/
 
-.hovered, .overlay{
+.hovered, .overlay {
   display: flex;
-  position: fixed;
+  position: absolute; 
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 1;
   pointer-events: none;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 90vw;
   height: 90vh;
-
 }
 
 .bottom{
-/* margin: 3rem 4.5rem 3rem 4.5rem; */
-display: flex;
-height: 90vh;
-width: 70vw;
-/* text-align: left; */
-/* justify-items: center; */
+  display: flex;
+  height: 90vh;
+  width: 70vw;
+  flex-wrap: wrap;
+  align-content: center;
 }
 
 .sample > a:hover, a:active{
-  background-color:#6c8440;
-  color:whitesmoke !important
+  background-color: #6c8440;
+  color: whitesmoke !important;
 }
 
 .sample > a:link, a:visited{
-  color:#6c8440;
+  color: #6c8440;
+}
+
+#sample-assets{
+  width: 70%;
+  align-self:center;
 }
 
 .tile{
@@ -152,17 +139,16 @@ width: 70vw;
   display: block;
   width: 200px; 
   height: 200px;
-
   display: flex;
   object-fit: cover;
-  object-position:top;
+  object-position: top;
 }
 
 .portfolio-tile{
   display: flex;
   flex-direction: column;
-  align-items:center;
-  text-align:center;
+  align-items: center;
+  text-align: center;
   margin-top: 1.5rem;
 }
 
@@ -171,40 +157,32 @@ p{
   color: black;
 }
 
-
 .tile{
   display: flex;
   object-fit: cover;
-  object-position:top;
+  object-position: top;
 }
-
 
 .nav-active {
-  background-color:#6c8440;
-  margin:auto;
+  background-color: #6c8440;
+  margin: auto;
   transition: background-color 200ms linear;
-
 }
-
-
 
 .tile{
   justify-self: center;
 }
-
 
 .press{
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  width:50px;
-  height:1rem;
-  background-color:#b2c655;
-  margin:auto;
-
+  width: 50px;
+  height: 1rem;
+  background-color: #b2c655;
+  margin: auto;
 }
-
 
 @media only screen and (max-width: 600px) {
   #projects {
@@ -216,6 +194,7 @@ p{
   height: 85vh;
   display: flex;
   flex-direction: column;
+  
 }
 
 li{
@@ -224,7 +203,7 @@ li{
 }
 
 .editorial, .web{
-  margin-top: 7%;;
+  margin-top: 7%;
 }
 
 .web{
@@ -253,9 +232,17 @@ li{
   margin-top: 7%;
 }
 
-
 .sample{
-  width: 50%;
+  width: 70%;
+  align-self: center;
+}
+
+.gallery{
+  margin-top:2rem;
+  height: 50rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 .arrow{
