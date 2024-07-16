@@ -2,8 +2,9 @@ body{
   display: flex;
   flex-direction: row;
   justify-content: center;
-  height: -webkit-fill-available;
-  width: -webkit-fill-available;
+  height:100vh;
+  width:100vw;
+  overflow-x: hidden !important;
   overflow: scroll;
   margin:0px;
   font-family: Helvetica, sans-serif;
@@ -15,7 +16,7 @@ body{
   display: flex;
   height: 100vh;
   width: 100vw;
-  background-image:  linear-gradient(to bottom, rgba(255,255,255,0), rgba(0,0,0, 0) 65%),url(../public/assets/master-crop.gif);
+  background-image:  linear-gradient(to bottom, rgba(255,255,255,0), rgba(0,0,0, 0) 65%),url(../assets/master-crop.gif);
   background-size: cover; /* or "contain" depending on what you want */
   background-position: center center;
   background-repeat: no-repeat;
@@ -35,6 +36,14 @@ body{
   font-style:italic;
 
 }
+
+#welcome-section a:link, 
+#welcome-section a:visited, 
+#welcome-section a:hover, 
+#welcome-section a:focus {
+  color: #2c4400 !important; /* Ensure links in the welcome section are the brighter green */
+}
+
 
 #welcome-link > a:link, .main-nav>a:visited{
   text-decoration: none;
@@ -282,8 +291,6 @@ li{
 #intro{
   display: flex;
   justify-content: space-between;
-  align-items: start;
-  margin: auto;
   height: 100vh;
   background-color: whitesmoke;
   width: 70vw;

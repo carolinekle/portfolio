@@ -245,6 +245,10 @@ li{
   justify-content: space-around;
 }
 
+.sample-vid{
+  margin-top:2rem;
+}
+
 .arrow{
   margin-bottom: 3rem;
   align-self: end;
