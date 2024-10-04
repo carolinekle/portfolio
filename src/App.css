@@ -4,11 +4,34 @@
   justify-content: space-between;
   font-family: Helvetica, sans-serif;
   background-color: whitesmoke;
+  width: 100%;
+  height: auto;
+  min-height: 100%;
+  overflow:hidden;
+  overflow-x:hidden;
+}
+
+
+#projects-root{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: Helvetica, sans-serif;
+  background-color: whitesmoke;
   width: 70vw;
   height: auto;
   min-height: 100vh;
   overflow:hidden;
   overflow-x:hidden;
+}
+#welcome-section{
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  background-image:  linear-gradient(to bottom, rgba(255,255,255,0), rgba(0,0,0, 0) 65%),url(../assets/master-crop.gif);
+  background-size: cover; /* or "contain" depending on what you want */
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 
 #container{

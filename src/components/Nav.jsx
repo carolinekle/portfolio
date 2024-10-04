@@ -6,9 +6,9 @@ export default function Nav() {
 
       <div className="nav">
 
-            <h1>
+         <h1>
               <Link to="/">caroline</Link>
-            </h1>
+            </h1> 
             <h1>
               <Link to="projects">projects</Link>
             </h1>
@@ -20,6 +20,9 @@ export default function Nav() {
             
             </div>
       </div>
+      <Route exact path="/" component={Home} />
+      <Route path="/about" component={Projects} />
+      <Route path="/contact" component={Contact} />
       <main>
         <Outlet />
       </main>
