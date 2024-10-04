@@ -1,25 +1,22 @@
-import React, { useState } from 'react';
-import RenderProjects from './components/RenderProjects.jsx';
-import Nav from './components/Nav.jsx';  
-import Intro from './components/Intro.jsx';  
-import Contact from './components/Contact.jsx';
-import Home from './components/Home'  
-import './App.css';
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Nav from "./components/Nav";
+import Home from "./pages/home";          
+import Projects from "./pages/projects";  
+import Contact from "./pages/contact";    
 
 const App = () => {
-  const [selectedSample, setSelectedSample] = useState(null);
-  const [hoveredImage, setHoveredImage] = useState(null);
-
   return (
-    <BrowserRouter>
-<Home/>
-</BrowserRouter>
-      );
-    };
-    
-    
+    <Router>
+      <Nav />
+      <main>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </main>
+    </Router>
+  );
+};
 
 export default App;
-
-

@@ -9,7 +9,6 @@ export default function Projects() {
         
       <main>
         <Nav />
-        <Intro />
         <RenderProjects />
       </main>
     );
