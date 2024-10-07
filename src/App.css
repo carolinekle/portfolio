@@ -33,6 +33,26 @@
   background-repeat: no-repeat;
 }
 
+#wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width:30rem;
+}
+
+#wrapper>h1:nth-child(2) {
+  font-size:40px;
+}
+
+#wrapper> a, a:visited, a:visited{
+  color:#1e2e00;
+}
+
+#wrapper > h1{
+  font-size: 50px !important;
+}
+
+
 #container{
   display: flex;
   height: auto;
@@ -46,7 +66,7 @@
   margin: auto;
 }
 
-h1{
+.nav > h1{
   color: #6c8440;
   display: flex;
   flex-direction: column;
