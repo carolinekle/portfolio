@@ -1,13 +1,18 @@
-import Nav from "../components/Nav";
+
+import Intro from "../components/Intro";
+import Socials from "../components/Socials"
 
 export default function Contact() {
+
+
     return (
 
-        
-        <main>
-          <Nav />
+
+        <div className ="box">
           <Intro />
-          <Contact />
-        </main>
+          <Socials />
+        </div>
+
+
       );
     }

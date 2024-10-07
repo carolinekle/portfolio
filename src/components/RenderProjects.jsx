@@ -106,7 +106,7 @@ const sample = {
         its audience while optimizing editorial workflows behind the scenes.
         </p><small>Software Developer</small>`,
       category: 'web', 
-      name:`Circa`,
+      name:`Glitch News and CMS`,
       asset:""
     },
   };
@@ -169,14 +169,6 @@ const sample = {
     };
   
     return (
-  
-  /*     <div className="app">
-      <Nav />
-      <div id="intro">
-        <Intro />
-        <Contact />
-      </div>
-    </div> */
   
       
       <div id="container">

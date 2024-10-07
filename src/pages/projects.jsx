@@ -7,9 +7,9 @@ export default function Projects() {
     return (
 
         
-      <main>
-        <Nav />
+
+
         <RenderProjects />
-      </main>
+
     );
   }

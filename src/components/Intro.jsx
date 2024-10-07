@@ -1,7 +1,6 @@
 export default function Intro() {
     return (
       <div className="about">
-        <h3>caroline</h3>
         <p>
           I'm a passionate digital producer with a unique blend of skills in software engineering and journalism. 
           My journey in digital storytelling is fueled by a fascination with how interfaces are evolving and how 

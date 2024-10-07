@@ -1,14 +1,13 @@
-import Nav from "../components/Nav";
-import Intro from "../components/Intro";
+
+import Ghost from "../components/Ghost";
 export default function Home() {
+
+
+
     return (
 
-        
-        <main>
 
-        <Nav />
-        <Intro />
+<></>
 
-        </main>
       );
     }
