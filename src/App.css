@@ -40,12 +40,9 @@
   width:30rem;
 }
 
-#wrapper>h1:nth-child(2) {
-  font-size:40px;
-}
 
 #wrapper> a, a:visited, a:visited{
-  color:#1e2e00;
+  color:#2e4700 !important;
 }
 
 #wrapper > h1{

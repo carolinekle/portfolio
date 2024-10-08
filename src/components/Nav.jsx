@@ -31,7 +31,7 @@ export default function Nav() {
         <h1>
           <Link to="/contact">contact</Link>
         </h1>
-        <div className="ferro">
+        <div id="fun">
         <Ferro/>
         </div>
       </div>
