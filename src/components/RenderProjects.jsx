@@ -175,14 +175,14 @@ const sample = {
         
         <div id="projects">
           <div className="web">
-            <h2>Web</h2>
+            <h2><i>Web</i></h2>
             <ul>
               {renderItems('web')}
             </ul>
           </div>
   
           <div className="editorial">
-            <h2>Editorial</h2>
+            <h2><i>Editorial</i></h2>
             <ul>
               {renderItems('editorial')}
             </ul>

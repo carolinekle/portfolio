@@ -31,24 +31,29 @@
   background-size: cover; /* or "contain" depending on what you want */
   background-position: center center;
   background-repeat: no-repeat;
+  flex-direction: column;
+  justify-content: center;
 }
 
-#wrapper{
+/* #wrapper{
   display: flex;
   flex-direction: column;
   justify-content: center;
   width:30rem;
-}
+} */
 
 
-#wrapper> a, a:link, a:visited{
+.welcome-section> a, a:link, a:visited{
   color:#2e4700 !important;
 }
 
-#wrapper > h1{
+.welcome-section > h1{
   font-size: 50px !important;
 }
-
+.right{
+  align-self: end;
+  margin-right: 2rem;
+}
 
 #container{
   display: flex;
@@ -263,6 +268,11 @@ li{
 .icons{
   display: flex;
   justify-content: space-around;
+  justify-content: start;
+}
+
+.icons > li{
+  margin-right: 2rem;
 }
 
 .about > p{
@@ -270,7 +280,7 @@ li{
 }
 
 .about{
-  margin-top: 7%;
+  margin-top: 15%;
   width:50%
 }
 
@@ -291,12 +301,6 @@ li{
   margin-top:2rem;
 }
 
-.arrow{
-  margin-bottom: 3rem;
-  align-self: end;
-  font-size: x-large;
-  color: #6c8440;
-}
 
 .sample > p{
   text-align: left;
@@ -309,11 +313,7 @@ li{
 .box{
   display: flex;
   justify-content: space-around;
+  flex-direction: column !important;
   width:80vw;
 }
 
-@keyframes bounce {
-  0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
-  40% { transform: translateY(-30px); } 
-  60% { transform: translateY(-15px); }
-}

@@ -7,7 +7,7 @@ const Ferro = () => {
   useEffect(() => {
     const sketch = (p) => {
       let THE_SEED;
-      let number_of_particles = 1000; 
+      let number_of_particles = 500; 
       let number_of_particle_sets = 6;
       let particle_sets = [];
       let palette;

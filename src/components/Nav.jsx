@@ -6,17 +6,20 @@ export default function Nav() {
   if (location.pathname === "/") {
     return (
         <div className="welcome-section">
-          <div id="wrapper">
+
             <h1>
               <Link to="/">caroline</Link>
             </h1>
-            <h1>
+
+
+            <h1 className="right">
               <Link to="/projects">projects</Link>
             </h1>
-            <h1>
+            <h1 className="right">
               <Link to="/contact">contact</Link>
             </h1>
-        </div>
+
+
       </div>
     );
   } else {
