@@ -181,10 +181,6 @@ const sample = {
             </ul>
           </div>
   
-          {selectedSample && (
-            <div className="arrow bouncing">↓</div>
-          )}
-  
           <div className="editorial">
             <h2>Editorial</h2>
             <ul>
