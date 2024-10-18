@@ -45,7 +45,7 @@ const sample = {
         </p><small>Astrophysics Intern</small>`,
       category: 'web',
       name:`Milkyway Map`,
-      asset:["../assets/sample-assets/serve1.png", "../assets/sample-assets/serve2.png"],
+      asset:["../assets/sample-assets/unnamed-1.png", "../assets/sample-assets/unnamed.png"],
       assetType:"gallery"
     },
     strong: {

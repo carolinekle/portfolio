@@ -4,8 +4,7 @@ export default function Contact() {
 
           <li>
             <a href="mailto:caroline.klewinowski@gmail.com" target="_blank" rel="noopener noreferrer">
-              caroline.klewinowski@gmail.com
-            </a>
+              <b>caroline.klewinowski@gmail.com</b></a>
           </li>
           <div className="icons">
             <li>
