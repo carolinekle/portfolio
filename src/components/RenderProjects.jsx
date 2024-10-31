@@ -76,7 +76,7 @@ const sample = {
         </p><small>Digital Producer</small>`,
       category: 'web',
       name:`Megatrends`,
-      asset:["../assets/sample-assets/earth.gif","public/assets/sample-assets/ghost.gif","../assets/sample-assets/turbines.gif"], 
+      asset:["../assets/sample-assets/earth.gif","../assets/sample-assets/ghost.gif","../assets/sample-assets/turbines.gif"], 
       assetType:"gallery"
     },
     network: {
@@ -85,8 +85,7 @@ const sample = {
         <p>I developed a clone of Twitter using Django, a powerful web framework in Python. 
         This project involved creating a platform that mimics key functionalities of Twitter, 
         such as user authentication, posting tweets, following users, and real-time updates. 
-        By leveraging Django's robust features like ORM for database management and Django Rest 
-        Framework for API development, I ensured the clone was scalable and efficient. 
+        By leveraging Django's robust features like ORM for database management, I ensured the clone was scalable and efficient. 
         The project aimed to provide a hands-on learning experience in web development while 
         exploring the architecture and design principles behind a popular social media platform 
         like Twitter.
@@ -98,12 +97,16 @@ const sample = {
     circa: {
       path: "../assets/circa.gif",
       text: `<strong><a href="">Circa</a></strong>
-        <p>A custom news site was developed using an API integration and a tailored CMS. 
-        This project aimed to streamline content aggregation and publication processes by leveraging 
-        API data feeds from reliable sources. The custom CMS enabled efficient content management, 
-        including article creation, editing, and scheduling. By combining the API's dynamic content 
-        with a user-friendly CMS interface, the news site provided curated and timely information to 
-        its audience while optimizing editorial workflows behind the scenes.
+        <p>A robust CMS and news platform built with Django, utilizing the Django ORM for efficient 
+        data modeling and database management across shared models for articles, authors, 
+        and section fronts. The platform supports customizable homepage layouts, 
+        real-time search capabilities with Django Haystack, and rich-text content 
+        editing via TinyMCE. User authentication is handled with Django Allauth, 
+        featuring custom profile management and email verification. The CMS also tracks 
+        and displays change history with Django Simple History, capturing user actions 
+        and timestamps for auditability. Media assets are managed through integration with 
+        DigitalOcean Spaces using Django-Storages, ensuring scalable and cloud-based file 
+        storage
         </p><small>Software Developer</small>`,
       category: 'web', 
       name:`Glitch News and CMS`,

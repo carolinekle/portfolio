@@ -276,7 +276,7 @@ li{
 }
 
 .contact{
-  margin-top: 10%;
+  margin-top: 15%;
 }
 
 .icons{
@@ -327,7 +327,7 @@ li{
 .box{
   display: flex;
   justify-content: space-around;
-  flex-direction: column !important;
+  flex-direction: row !important;
   width:80vw;
   font-family: "Source Code Pro";
   -webkit-font-smoothing: antialiased;
