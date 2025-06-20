@@ -73,7 +73,7 @@ const sample = {
         making trends like AI and the space race more captivating and interactive for readers. 
         Each GIF provided a unique visual perspective, enhancing reader engagement with 
         the future of investing in these transformative areas.
-        </p><small>Digital Producer</small>`,
+        </p><small>Digital Producer and Developer</small>`,
       category: 'web',
       name:`Megatrends`,
       asset:["../assets/sample-assets/earth.gif","../assets/sample-assets/ghost.gif","../assets/sample-assets/turbines.gif"], 
@@ -107,7 +107,7 @@ const sample = {
         and timestamps for auditability. Media assets are managed through integration with 
         DigitalOcean Spaces using Django-Storages, ensuring scalable and cloud-based file 
         storage
-        </p><small>Software Developer</small>`,
+        </p><small>Software Engineer</small>`,
       category: 'web', 
       name:`Glitch News and CMS`,
       asset:""
