@@ -96,7 +96,7 @@ const sample = {
     },
     circa: {
       path: "../assets/circa.gif",
-      text: `<strong><a href=""><a href="https://glitch.motherboard.live" target="_blank">Glitch Magazine</a> and<a href="https://cms-version1-0.onrender.com" target="_blank">Glitch CMS</a></strong>
+      text: `<strong><a href=""><a href="https://glitch.motherboard.live" target="_blank">Glitch News</a> and <a href="https://cms-version1-0.onrender.com" target="_blank">Glitch CMS</a></strong>
         <p>A robust CMS and news platform built with Django, utilizing the Django ORM for efficient 
         data modeling and database management across shared models for articles, authors, 
         and section fronts. The platform supports customizable homepage layouts, 
