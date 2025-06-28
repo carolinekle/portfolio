@@ -79,21 +79,6 @@ const sample = {
       asset:["../assets/sample-assets/earth.gif","../assets/sample-assets/ghost.gif","../assets/sample-assets/turbines.gif"], 
       assetType:"gallery"
     },
-    network: {
-      path: "../assets/heart.gif",
-      text: `<strong><a href="">Network</a></strong>
-        <p>I developed a clone of Twitter using Django, a powerful web framework in Python. 
-        This project involved creating a platform that mimics key functionalities of Twitter, 
-        such as user authentication, posting tweets, following users, and real-time updates. 
-        By leveraging Django's robust features like ORM for database management, I ensured the clone was scalable and efficient. 
-        The project aimed to provide a hands-on learning experience in web development while 
-        exploring the architecture and design principles behind a popular social media platform 
-        like Twitter.
-        </p><small>Software Developer</small>`,
-      category: 'web',
-      name:`Network`,
-      asset:""
-    },
     circa: {
       path: "../assets/circa.gif",
       text: `<strong><a href=""><a href="https://glitch.motherboard.live" target="_blank">Glitch News</a> and <a href="https://glitch-cms.motherboard.live/login?next=/" target="_blank">Glitch CMS</a></strong>
