@@ -11,13 +11,13 @@ const sample = {
         substances in therapeutic settings.
         </p><small>Associate Producer</small>`,
       category: 'editorial',
-      name:`Pschedelic therapy`,
+      name:`Psychedelic therapy`,
       asset:`<iframe width="560" height="315" src="https://www.youtube.com/embed/w6vnyJuHbi8?si=UafpkuYS9JyAauJ8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
       assetType:"iframe"
     },
     essex: {
       path: "../assets/Essex_Hemphill.jpg",
-      text: `<strong><i><a href="https://www.thecoffeehousedc.com/" target="_blank">Fierceness Served!</i>  |  Dec8 Productions</a></strong>
+      text: `<strong><i><a href="https://www.thecoffeehousedc.com/" target="_blank">Fierceness Served!</a></i>  |  Dec8 Productions</strong>
         <p>The Fierceness Served! The ENIKAlley Coffeehouse documentary focuses on 
         the local history of a Black LGBT performance venue, rehearsal space, 
         and meeting place for artists and political organizations in Washington, DC 
@@ -50,7 +50,7 @@ const sample = {
     },
     strong: {
       path: "../assets/SafeStrong.jpg",
-      text: `<strong> <i><a href="https://sbpress.com/2021/03/coming-back-safe-and-strong/" target="_blank">"Coming Back Safe and Strong"</i> | Stony Brook Press</a></strong>
+      text: `<strong><i><a href="https://sbpress.com/2021/03/coming-back-safe-and-strong/" target="_blank">"Coming Back Safe and Strong"</a></i> | Stony Brook Press</strong>
         <p>I reported and wrote an article on Stony Brook University's Member Action Coalition SBU (MAC), 
         a caucus within the United University Professions (UUP) union, challenging the administration's 
         directive for professional staff to return to campus. Despite a statewide telecommuting agreement set to expire, 
@@ -81,7 +81,7 @@ const sample = {
     },
     circa: {
       path: "../assets/circa.gif",
-      text: `<strong><a href=""><a href="https://glitch.motherboard.live" target="_blank">Glitch News</a> and <a href="https://glitch-cms.motherboard.live/login?next=/" target="_blank">Glitch CMS</a></strong>
+      text: `<strong><a href="https://glitch.motherboard.live" target="_blank">Glitch News</a> and <a href="https://glitch-cms.motherboard.live/login?next=/" target="_blank">Glitch CMS</a></strong>
         <p>A robust CMS and news platform built with Django, utilizing the Django ORM for efficient 
         data modeling and database management across shared models for articles, authors, 
         and section fronts. The platform supports customizable homepage layouts, 
@@ -91,11 +91,12 @@ const sample = {
         and displays change history with Django Simple History, capturing user actions 
         and timestamps for auditability. Media assets are managed through integration with 
         DigitalOcean Spaces using Django-Storages, ensuring scalable and cloud-based file 
-        storage
+        storage.
         </p><small>Software Engineer</small>`,
-      category: 'web', 
+      category: 'web',
       name:`Glitch News and CMS`,
-      asset:""
+      asset:"",
+      assetType:"text"
     },
   };
   
@@ -104,9 +105,6 @@ const sample = {
     const [hoveredImage, setHoveredImage] = useState(null);
     const [sampleAsset, setSampleAsset] = useState(null);
     const [assetType, setAssetType] = useState(null);
-  
-  
-  
   
     const handleMouseOver = (key) => {
       setHoveredImage(sample[key].path);
@@ -118,7 +116,7 @@ const sample = {
   
     const handleClick = (key) => {
       setSelectedSample(sample[key].text);
-      setSampleAsset(sample[key].asset)
+      setSampleAsset(sample[key].asset);
       setAssetType(sample[key].assetType);
     };
   
@@ -157,10 +155,7 @@ const sample = {
     };
   
     return (
-  
-      
       <div id="container">
-        
         <div id="projects">
           <div className="web">
             <h2><i>Web</i></h2>
@@ -175,7 +170,6 @@ const sample = {
               {renderItems('editorial')}
             </ul>
           </div>
-  
         </div>
         {hoveredImage && (
           <img className="hovered" src={hoveredImage} alt="Hovered project" style={{ height: '200px', width: '200px', objectFit: 'cover' }} />
@@ -185,7 +179,7 @@ const sample = {
             <div id="exerpt">
               <div className="sample" dangerouslySetInnerHTML={{ __html: selectedSample }} />
               <div id="sample-assets" style={{ width: '70%'}}>
-              {renderAssets()}
+                {renderAssets()}
               </div>
             </div>
           </div>
