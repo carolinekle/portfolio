@@ -1,33 +1,20 @@
 import { useState } from 'react'
 const sample = {
-    reason: {
-      path: "../assets/reason.jpg",
-      text: `<strong><a href="https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbmJSN3NtR3V5dV9RWUNIX00tWmlTVE9DQ0J6d3xBQ3Jtc0tsbkZyeGE4RG83bmRxQXJzUDFxeGh5SlpxOFhnUWNRUEJfLUlRNGlVRWVaQ3J2Wm02SVVFcWpqV08zRkMtclpBc084S29iNUFQMWx1NU1IbFVGd0tscGM3Skh5SUYwTlJ6M3hGQ1hrM2FleVcweFBCbw&q=https%3A%2F%2Freason.com%2Fvideo%2F2023%2F01%2F24%2Fheroin-addiction-psychedelics-ayahuasca-therapy%2F&v=w6vnyJuHbi8" target="_blank">Does psychedelic therapy live up to the hype?  |  Dec8 Productions</a></strong>
-        <p>Although the Van Tuinens have no official training or licensing, 
-        they are part of a broader movement. 
-        Therapists and researchers increasingly see psychedelics as an effective 
-        way of treating addiction and related issues, and the Food and Drug 
-        Administration is nearing approval of MDMA, psilocybin, and other 
-        substances in therapeutic settings.
-        </p><small>Associate Producer</small>`,
-      category: 'editorial',
-      name:`Psychedelic therapy`,
-      asset:`<iframe width="560" height="315" src="https://www.youtube.com/embed/w6vnyJuHbi8?si=UafpkuYS9JyAauJ8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
-      assetType:"iframe"
-    },
-    essex: {
-      path: "../assets/Essex_Hemphill.jpg",
-      text: `<strong><i><a href="https://www.thecoffeehousedc.com/" target="_blank">Fierceness Served!</a></i>  |  Dec8 Productions</strong>
-        <p>The Fierceness Served! The ENIKAlley Coffeehouse documentary focuses on 
-        the local history of a Black LGBT performance venue, rehearsal space, 
-        and meeting place for artists and political organizations in Washington, DC 
-        from the 1980s to the mid-90s. It was the epicenter of a cultural renaissance 
-        that paralleled The Harlem Renaissance.
-        </p><small>Production Assistant Intern</small>`,
-      category: 'editorial',
-      name:`Fierceness Served!`,
-      asset:["../assets/sample-assets/serve1.png", "../assets/sample-assets/serve2.png"],
-      assetType:"gallery"
+    dog: {
+      path: "../assets/wave.gif",
+      text: `<strong><a href="https://huggingface.co/spaces/carolineklew/dogwhistle" target="_blank">Dog Ear </a></strong>
+        <p> A fine-tuned RoBERTa classifier for dogwhistle ideology attribution, 
+        benchmarked against Llama Guard 3 and OpenAI Moderation on the SALT-NLP silent_signals 
+        dataset (16,199 examples). Production safety APIs miss 82% of labeled dogwhistle content, 
+        with LG3 at 0% recall on politically coded language like "liberal" and "climate change denier," 
+        while the fine-tuned model achieves 93.6% macro-F1 across 17 ideological categories. The project 
+        includes a complete data pipeline, manual PyTorch training loop, and a deployed FastAPI web app 
+        with the model hosted on Hugging Face.
+        </p><small>Astrophysics Intern</small>`,
+      category: 'web',
+      name:`Milkyway Map`,
+      asset:"",
+      assetType:"text"
     },
     galaxy: {
       path: "../assets/amnh.gif",
@@ -47,22 +34,6 @@ const sample = {
       name:`Milkyway Map`,
       asset:["../assets/sample-assets/unnamed-1.png", "../assets/sample-assets/unnamed.png"],
       assetType:"gallery"
-    },
-    strong: {
-      path: "../assets/SafeStrong.jpg",
-      text: `<strong><i><a href="https://sbpress.com/2021/03/coming-back-safe-and-strong/" target="_blank">"Coming Back Safe and Strong"</a></i> | Stony Brook Press</strong>
-        <p>I reported and wrote an article on Stony Brook University's Member Action Coalition SBU (MAC), 
-        a caucus within the United University Professions (UUP) union, challenging the administration's 
-        directive for professional staff to return to campus. Despite a statewide telecommuting agreement set to expire, 
-        MAC argues the return order poses COVID-19 risks and could disproportionately impact caregivers, women, and people of color. 
-        Over 100 individuals signed a petition opposing the return mandate, reflecting widespread concerns within the university 
-        community. My reporting for the Stony Brook Press, where I advanced from writer to editor, earned me the Best Student 
-        COVID Reporting award from the Long Island Press Club.  
-        </p><small>Writer and Editor</small>`,
-      category: 'editorial',
-      name:`"Coming Back Safe and Strong"`,
-      asset:"",
-      assetType:"text"
     },
     mega: {
       path: "../assets/spaceman2.gif",
@@ -158,18 +129,11 @@ const sample = {
       <div id="container">
         <div id="projects">
           <div className="web">
-            <h2><i>Web</i></h2>
             <ul>
               {renderItems('web')}
             </ul>
           </div>
   
-          <div className="editorial">
-            <h2><i>Editorial</i></h2>
-            <ul>
-              {renderItems('editorial')}
-            </ul>
-          </div>
         </div>
         {hoveredImage && (
           <img className="hovered" src={hoveredImage} alt="Hovered project" style={{ height: '200px', width: '200px', objectFit: 'cover' }} />
