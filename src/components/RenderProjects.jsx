@@ -10,12 +10,48 @@ const sample = {
         while the fine-tuned model achieves 93.6% macro-F1 across 17 ideological categories. The project 
         includes a complete data pipeline, manual PyTorch training loop, and a deployed FastAPI web app 
         with the model hosted on Hugging Face.
-        </p><small>Astrophysics Intern</small>`,
+        </p><small>NLP and engineering</small>`,
       category: 'web',
       name:`Dog Ear`,
       asset:"",
       assetType:"text"
     },
+      circa: {
+      path: "../assets/circa.gif",
+      text: `<strong><a href="https://glitch.motherboard.live" target="_blank">Glitch News</a> and <a href="https://glitch-cms.motherboard.live/login?next=/" target="_blank">Glitch CMS</a></strong>
+        <p>A robust CMS and news platform built with Django, utilizing the Django ORM for efficient 
+        data modeling and database management across shared models for articles, authors, 
+        and section fronts. The platform supports customizable homepage layouts, 
+        real-time search capabilities with Django Haystack, and rich-text content 
+        editing via TinyMCE. User authentication is handled with Django Allauth, 
+        featuring custom profile management and email verification. The CMS also tracks 
+        and displays change history with Django Simple History, capturing user actions 
+        and timestamps for auditability. Media assets are managed through integration with 
+        DigitalOcean Spaces using Django-Storages, ensuring scalable and cloud-based file 
+        storage.
+        </p><small>Software Engineer</small>`,
+      category: 'web',
+      name:`Glitch News and CMS`,
+      asset:"",
+      assetType:"text"
+    },
+
+      mega: {
+      path: "../assets/spaceman2.gif",
+      text: `<strong><a href="https://www.usnews.com/topics/series/megatrends" target="_blank">ASCII gifs  |  U.S. News</a></strong>
+        <p>As part of U.S. News & World Report's investing series on megatrends, 
+        I contributed by creating ASCII GIFs to bring these concepts to life. 
+        These GIFs were designed to add a dynamic and visually compelling element, 
+        making trends like AI and the space race more captivating and interactive for readers. 
+        Each GIF provided a unique visual perspective, enhancing reader engagement with 
+        the future of investing in these transformative areas.
+        </p><small>Digital Producer and Developer</small>`,
+      category: 'web',
+      name:`Megatrends`,
+      asset:["../assets/sample-assets/earth.gif","../assets/sample-assets/ghost.gif","../assets/sample-assets/turbines.gif"], 
+      assetType:"gallery"
+    },
+
     galaxy: {
       path: "../assets/amnh.gif",
       text: `<strong><a href="http://user.astro.columbia.edu/~esandford/keplerAtlas/home.html" target="_blank">Kepler Atlas | American Museum of Natural History</a></strong>
@@ -34,40 +70,6 @@ const sample = {
       name:`Milkyway Map`,
       asset:["../assets/sample-assets/unnamed-1.png", "../assets/sample-assets/unnamed.png"],
       assetType:"gallery"
-    },
-    mega: {
-      path: "../assets/spaceman2.gif",
-      text: `<strong><a href="https://www.usnews.com/topics/series/megatrends" target="_blank">ASCII gifs  |  U.S. News</a></strong>
-        <p>As part of U.S. News & World Report's investing series on megatrends, 
-        I contributed by creating ASCII GIFs to bring these concepts to life. 
-        These GIFs were designed to add a dynamic and visually compelling element, 
-        making trends like AI and the space race more captivating and interactive for readers. 
-        Each GIF provided a unique visual perspective, enhancing reader engagement with 
-        the future of investing in these transformative areas.
-        </p><small>Digital Producer and Developer</small>`,
-      category: 'web',
-      name:`Megatrends`,
-      asset:["../assets/sample-assets/earth.gif","../assets/sample-assets/ghost.gif","../assets/sample-assets/turbines.gif"], 
-      assetType:"gallery"
-    },
-    circa: {
-      path: "../assets/circa.gif",
-      text: `<strong><a href="https://glitch.motherboard.live" target="_blank">Glitch News</a> and <a href="https://glitch-cms.motherboard.live/login?next=/" target="_blank">Glitch CMS</a></strong>
-        <p>A robust CMS and news platform built with Django, utilizing the Django ORM for efficient 
-        data modeling and database management across shared models for articles, authors, 
-        and section fronts. The platform supports customizable homepage layouts, 
-        real-time search capabilities with Django Haystack, and rich-text content 
-        editing via TinyMCE. User authentication is handled with Django Allauth, 
-        featuring custom profile management and email verification. The CMS also tracks 
-        and displays change history with Django Simple History, capturing user actions 
-        and timestamps for auditability. Media assets are managed through integration with 
-        DigitalOcean Spaces using Django-Storages, ensuring scalable and cloud-based file 
-        storage.
-        </p><small>Software Engineer</small>`,
-      category: 'web',
-      name:`Glitch News and CMS`,
-      asset:"",
-      assetType:"text"
     },
   };
   
