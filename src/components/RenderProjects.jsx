@@ -12,7 +12,7 @@ const sample = {
         with the model hosted on Hugging Face.
         </p><small>Astrophysics Intern</small>`,
       category: 'web',
-      name:`Milkyway Map`,
+      name:`Dog Ear`,
       asset:"",
       assetType:"text"
     },
